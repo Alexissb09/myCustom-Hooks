@@ -1,0 +1,10 @@
+# Notas
+
+Este repositorio contiene un par de customs hooks que van a servir para no volver a re-escribir codigo
+
+- useFetch(url): hace un fetch de los datos y los retorna, usa una referencia al componente
+para que no haga el seteo de los datos si el componente esta desmontado
+
+- useForm(initialValue): maneja los valores de un input, nos retorna una funcion handleInputChange(event.target)
+que setea los datos que le mandamos, formState que es el estado que contiene el valor,
+y una funcion reset que establece los valores del input en vacio
